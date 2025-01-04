@@ -61,6 +61,9 @@ Code and instructions for reassembling the pipeline in an environment of choice:
 
 
 ## Key initial findings
+1) LlamaParse delivered the best results in terms of the quality of the parsed material when compared with other parsers tested on the source material (ABBYY FineReader and Adobe PDF Extract). The parser showed itself to be capable of parsing poor quality scans with tolerable fidelity and of dealing with complex tabular layouts.
+2) LlamaParse is not immune to hallucinations despite the claims of its developers. We found a number of instances in which hallucinated text had been inserted into the markdown. The issue was resolved in this case by including a specific “Do not hallucinate” instruction in the parsing instructions.  
+
 
 
 ## Challenges
