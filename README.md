@@ -1,29 +1,33 @@
-# The power of advertisements
-
-##  Depictions of domestic appliances in magazines and the parallel emergence of gas and electricity as sources of energy
+# Creating a searchable database of General Post Office circulars
 
 ## Short summary
-The investigation aims at examining the application of computer vision tools to photos of documents and objects within historical collections. It takes as its case study the identification of domestic appliances in advertisements found within journals and magazines. To achieve this, the investigation is working in collaboration with the archives of the Institute of Engineering & Technology, which entity provided the Congruence Engine project with the digitised volume of The Electrical Age. It is also planned to assess how texts within and surrounding the advertisements can improve the identification of objects on images. 
+A question frequently posed to archivists at BT archives is “When did X location receive Y communication technology?” These questions and others like it can be answered by consulting the General Post Office circulars: a set of weekly informational bulletins produced by the Post Office for internal circulation until 1979. The circulars contain a vast amount of information on the historical workings of the Post Office, including: staff appointments, branch openings, mail ship sailings and new technology launches but, to date, no rapidly searchable index to these circulars has existed. Archivists have therefore had to rely on a spreadsheet of references to information in the circulars when seeking to answer questions. 
 
-## Aims and objectives
+Our aim was to use digital methods, including generative AI, to create an automatic reference system for circulars dated between 1879 and 1979 that was capable of understanding and responding to queries posed to it in natural language. The task presented a significant challenge as although all of the circulars used by this investigation were typeset and digitised, their use of columnar layouts and tables in various formats, in addition to the poor scan quality of some of the documents, made automated interpretation of the information a challenging task. 
 
-The initial aim of the investigation was to use computer vision tools to examine the gendered depictions of domestic appliances advertisements in historical magazines and journals. This aim was devised to 1) have a dedicated investigation within the energy strand that explores the uses of energy apart from its production and transmission, and 2) to contribute to the historical scholarship exploring the gendered depiction of advertisements.
-After initial tests with the computer vision tool, it was noted that the tool was possibly not trained on historical images and low-resolution/poor quality images, given that the tool was less accurate with detection on such image types. As a result, the investigation refocused its core aim on asking what image standards and digital requirements would be needed to train a computer vision tool for specific questions. In this investigation, we are also planning on exploring how ChatGPT can assist users as a technical adviser on setting up the computer vision tool. 
+We developed a chatbot application that uses Retrieval Augmented Generation (RAG) to query the circulars in natural language and delivers a natural language response. The chatbot interface acts as the frontend to a vector database datastore, which holds sections of vectorised text from the circulars that are compared for proximity to the vectorised question posed by the user with responses being retrieved dependant on the proximity in vector space of the text sections to the question posed by the user. 
+
+
+## Research questions
+
+1) Can the circulars be brought together to create a searchable database?
+   
+2) Can we increase the speed at which an archivist can answer user enquiries about telecommunication installations in their focus area?
+
+3) What accompanying material would a searchable database of communication developments need to ensure it was a) usable and b) useful to researchers?
+   
+4) Can we query the database to demonstrate how Bradford was speaking to the rest of the world over the 100 years?
+   
+5) Are there discernible patterns of change over time, and do these correlate to our understanding of social, political, economic, and cultural growth across Britain in the same period?
+
 
 
 ## People 
 
-**Daniel Belteki** : Conceptualization, Investigation, Data curation, Formal analysis, Methodology, Visualization 
+**Natasha Kitcher**: Natasha Kitcher: Conceptualization, Data curation, Investigation, Resources, Validation, Writing - original draft, Writing - review & editing 
 
-**Kunika Kono**: Methodology, Software
+**Nayomi Kasthuri Arachchi**: Data curation, Formal analysis, Investigation, Methodology, Software, Validation, Writing - original draft, Writing - review & editing
 
-**Anne Locker** : Data Curation , Resources
-
-**Alex Butterworth** : Methodology, Investigation
-
-**Graeme Gooday** : Investigation, Methodology
-
-**Kylea Little**: Investigation, Methodology
 
 
 ## Data
