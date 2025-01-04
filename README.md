@@ -34,9 +34,17 @@ We developed a chatbot application that uses Retrieval Augmented Generation (RAG
 - Post Office Circulars 1879 - 1979, courtesy of BT Archives. All digitised and in PDF format.  
 
 
-## Methodology
+## Method
 
 
+## Tools
+- LlamaParse
+- Qdrant Cloud vector database
+- GPT-3.5 model from OpenAI
+- GitHub Codespaces
+
+
+## Outputs
 
 ## Key initial findings
 1)	The initial tests showed that objects were identified with higher accuracy on images featuring no texts and illustrations in colour. Objects were also identified with higher accuracy in more contemporary images. 
