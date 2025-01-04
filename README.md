@@ -24,9 +24,9 @@ We developed a chatbot application that uses Retrieval Augmented Generation (RAG
 
 ## People 
 
-**Natasha Kitcher**: Natasha Kitcher: Conceptualization, Data curation, Investigation, Resources, Validation, Writing - original draft, Writing - review & editing 
+- **Natasha Kitcher**: Conceptualization, Data curation, Investigation, Resources, Validation, Writing - original draft, Writing - review & editing 
 
-**Nayomi Kasthuri Arachchi**: Data curation, Formal analysis, Investigation, Methodology, Software, Validation, Writing - original draft, Writing - review & editing
+- **Nayomi Kasthuri Arachchi**: Data curation, Formal analysis, Investigation, Methodology, Software, Validation, Writing - original draft, Writing - review & editing
 
 
 
