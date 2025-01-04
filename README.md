@@ -35,6 +35,13 @@ We developed a chatbot application that uses Retrieval Augmented Generation (RAG
 
 
 ## Method
+We used a Retrieval Augmented Generation (RAG) strategy to transform the digitised circulars into a searchable database. 
+
+​​The pipeline was constructed sequentially, commencing with the indexing phase followed by the creation of the retrieval mechanism and finally an interface to allow for generation.
+
+In the indexing phase, the files containing the circulars were first parsed from PDF into markdown in sections using a parser developed specifically for PDF files with complex layouts. Conversion from PDF format was required in order to convert the text into a form that could be vectorised further on in the process. Markdown is a useful format to use in RAG applications as it provides the ability to preserve the underlying format of the text and therefore helps to preserve context. 
+
+The markdown outputs were then chunked into smaller sections of text, transformed into vector embeddings and stored in a vector database. The retrieval and generation phases of the pipeline were facilitated through the use of a chat interface built using Chainlit, a Python-based framework for creating and managing chat applications that was implemented using the LangChain framework. Query retrieval and generation was handled using OpenAI’s chat models (GPT-3.5 at the time that the RAG pipeline was assembled). 
 
 
 ## Tools
