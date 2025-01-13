@@ -57,6 +57,8 @@ Code and instructions for reassembling the pipeline in an environment of choice:
 - parse.py: a Python file for parsing the circulars to markdown using LlamaParse, chunking the text, creating vector embeddings and finally storing these embeddings in a vector database
 - app.py: a Python file for launching a chat application using Chainlit for querying the database of information extracted from the circulars 
 - codespace_instructions.pdf: a primer describing how to configure a GitHub codespace for launching the RAG application
+
+
 Also, forthcoming book chapter in *Emergent Histories: New Work in the Digital History of Industry and Collections from the Congruence Engine Project*
 
 
